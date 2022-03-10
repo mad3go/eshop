@@ -1,4 +1,3 @@
-/* pages/home/home.wxss */
 .pyg_home {
   width: 100%;
   height: 1000px;
@@ -7,7 +6,7 @@
 }
 .pyg_home .discover_text {
   width: 100%;
-  padding: 10rpx;
+  padding: 20rpx;
   padding-left: 40rpx;
 }
 .pyg_home .discover_text text {
@@ -15,19 +14,35 @@
   font-size: 40rpx;
   color: #333333;
 }
-.pyg_home scroll-view {
+.pyg_home .scoll_view_tag {
   width: 100%;
-  height: 64rpx;
+  height: 60rpx;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
   padding: 20rpx;
 }
-.pyg_home scroll-view view {
+.pyg_home .scoll_view_tag view {
   width: 180rpx;
-  height: 64rpx;
+  height: 60rpx;
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #60b173;
   border-radius: 50rpx;
+}
+.pyg_home .scoll_view_wangpu {
+  width: 1800rpx;
+  height: 520rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 20rpx;
+}
+.pyg_home .scoll_view_wangpu .wangpu {
+  height: 520rpx;
+  width: 600rpx;
+  display: flex;
+  background-color: #fff;
+  border-radius: 30rpx;
 }
