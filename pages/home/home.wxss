@@ -1,0 +1,33 @@
+/* pages/home/home.wxss */
+.pyg_home {
+  width: 100%;
+  height: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+.pyg_home .discover_text {
+  width: 100%;
+  padding: 10rpx;
+  padding-left: 40rpx;
+}
+.pyg_home .discover_text text {
+  border-bottom: 4rpx solid #60b173;
+  font-size: 40rpx;
+  color: #333333;
+}
+.pyg_home scroll-view {
+  width: 100%;
+  height: 64rpx;
+  display: flex;
+  flex-direction: row;
+  padding: 20rpx;
+}
+.pyg_home scroll-view view {
+  width: 180rpx;
+  height: 64rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #60b173;
+  border-radius: 50rpx;
+}

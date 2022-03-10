@@ -1,0 +1,17 @@
+<!--pages/home/home.wxml-->
+<view class="pyg_home">
+        <view class="srh">
+            <searchInput></searchInput>
+        </view>
+        <view class="discover_text">
+            <text>发现</text>
+        </view>
+        <view class="discover_tabs">
+            <scroll-view scroll-x="true">
+                <view class="">米面粮油</view>
+                <view class="">果蔬生鲜</view>
+                <view class="">生活用品</view>
+                <view class="">医护用品</view>
+            </scroll-view>
+        </view>
+</view>
