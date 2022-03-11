@@ -22,6 +22,9 @@
             <scroll-view class="scoll_view_wangpu" scroll-x="true" enable-flex="true">
                 <view class="wangpu">
                     <image src="../../icon/sucai.jpeg" alt="sucai" mode="aspectFill"></image>
+                    <viwe class="wangpu_info">
+                        
+                    </viwe>
                 </view>
                 <view class="wangpu">
                     <image src="../../icon/roupian.jpeg" alt="roupian" mode="aspectFill"></image>

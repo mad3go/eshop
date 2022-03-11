@@ -34,17 +34,29 @@
         }
     .scoll_view_wangpu{
         width: 1800rpx;
-        height: 520rpx;
+        height: 590rpx;
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        
         padding: 20rpx;
         .wangpu{
-            height: 520rpx;
-            width: 600rpx;
+            width: 620rpx;
+            height: 540rpx;
             display: flex;
+            flex-direction: column;
             background-color: @backgroundColor;
             border-radius: 30rpx;
+            image{
+                width: 620rpx;
+                height: calc(310 * 269 / 400);
+                border-top-left-radius: 30rpx;
+                border-top-right-radius: 30rpx;
+            }
+            .wangpu_info{
+                width: 620rpx;
+
+                background-color: @backgroundColor;
+            }
         }
     }
 }
