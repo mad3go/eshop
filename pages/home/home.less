@@ -1,0 +1,62 @@
+@themeColor:#60b173;
+@backgroundColor:#fff;
+.pyg_home{
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    .discover_text{
+        width: 100%;
+        padding: 20rpx;
+        padding-left: 40rpx;
+        text{
+            border-bottom: 4rpx solid @themeColor;
+            font-size: 40rpx;
+            color: #333333;
+        }
+    }
+    .scoll_view_tag{
+        width: 100%;
+        height: 60rpx;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 20rpx;
+            view{
+                width: 180rpx;
+                height: 60rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: @themeColor;
+                border-radius: 50rpx;
+            }
+        }
+    .scoll_view_wangpu{
+        width: 1800rpx;
+        height: 590rpx;
+        display: flex;
+        flex-direction: row;
+        
+        padding: 20rpx;
+        .wangpu{
+            width: 620rpx;
+            height: 540rpx;
+            display: flex;
+            flex-direction: column;
+            background-color: @backgroundColor;
+            border-radius: 30rpx;
+            image{
+                width: 620rpx;
+                height: calc(310 * 269 / 400);
+                border-top-left-radius: 30rpx;
+                border-top-right-radius: 30rpx;
+            }
+            .wangpu_info{
+                width: 620rpx;
+
+                background-color: @backgroundColor;
+            }
+        }
+    }
+}

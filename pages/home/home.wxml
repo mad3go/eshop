@@ -7,11 +7,29 @@
             <text>发现</text>
         </view>
         <view class="discover_tabs">
-            <scroll-view scroll-x="true">
-                <view class="">米面粮油</view>
-                <view class="">果蔬生鲜</view>
-                <view class="">生活用品</view>
-                <view class="">医护用品</view>
+            <scroll-view class="scoll_view_tag" scroll-x="true" enable-flex="true">
+                <view class="tag">米面粮油</view>
+                <view class="tag">果蔬生鲜</view>
+                <view class="tag">生活用品</view>
+                <view class="tag">医护用品</view>
             </scroll-view>
         </view>
+        <view class="discover_text">
+            <text>热门店铺</text>
+        </view>
+
+        <view class="discover_tabs">
+            <scroll-view class="scoll_view_wangpu" scroll-x="true" enable-flex="true">
+                <view class="wangpu">
+                    <image src="../../icon/sucai.jpeg" alt="sucai" mode="aspectFill"></image>
+                    <viwe class="wangpu_info">
+                        
+                    </viwe>
+                </view>
+                <view class="wangpu">
+                    <image src="../../icon/roupian.jpeg" alt="roupian" mode="aspectFill"></image>
+                </view>
+            </scroll-view>
+        </view>
+        
 </view>
