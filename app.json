@@ -1,10 +1,10 @@
 {
   "pages": [
+    "pages/order/order",
     "pages/home/home",
     "pages/index/index",
     "pages/logs/logs",
     "pages/antiepd/antiepd",
-    "pages/order/order",
     "pages/profile/profile",
     "pages/takeout/takeout",
     "components/searchInput",

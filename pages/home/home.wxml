@@ -7,29 +7,43 @@
             <text>发现</text>
         </view>
         <view class="discover_tabs">
-            <scroll-view class="scoll_view_tag" scroll-x="true" enable-flex="true">
-                <view class="tag">米面粮油</view>
-                <view class="tag">果蔬生鲜</view>
-                <view class="tag">生活用品</view>
-                <view class="tag">医护用品</view>
+            <scroll-view class="scroll_view_tag" scroll-x="true" enable-flex="true">
+                <view class="tag" hover-class="tag_hover">米面粮油</view>
+                <view class="tag" hover-class="tag_hover">果蔬生鲜</view>
+                <view class="tag" hover-class="tag_hover">生活用品</view>
+                <view class="tag" hover-class="tag_hover">医护用品</view>
             </scroll-view>
         </view>
         <view class="discover_text">
             <text>热门店铺</text>
         </view>
-
-        <view class="discover_tabs">
-            <scroll-view class="scoll_view_wangpu" scroll-x="true" enable-flex="true">
+        <view class="discover_wangpu">
+            <scroll-view class="scroll_view_wangpu" scroll-x="true" enable-flex="true">
                 <view class="wangpu">
-                    <image src="../../icon/sucai.jpeg" alt="sucai" mode="aspectFill"></image>
-                    <viwe class="wangpu_info">
-                        
-                    </viwe>
+                    <image src="../../icon/sucai.jpeg" alt="sucai" mode="top"></image>
+                    <view class="rate"><text>4.8</text></view>
+                    <viwe class="wangpu_info"></viwe>
                 </view>
                 <view class="wangpu">
-                    <image src="../../icon/roupian.jpeg" alt="roupian" mode="aspectFill"></image>
+                    <image src="../../icon/roupian.jpeg" alt="roupian" mode="top"></image>
+                    <view class="rate">4.8</view>
+                    <viwe class="wangpu_info"></viwe>
                 </view>
             </scroll-view>
         </view>
+        <view class="discover_text">
+            <text>战役看点</text>
+        </view>
         
+        <view class="antiepd_info" wx:for="{{antiepd_info_list}}" wx:for-index="antiepd" wx:for-item="item" wx:key="unique">
+            <image src="{{item.img}}"></image>
+            <view class="antiepd_info_detail">
+                <view class="title">{{item.title}}</view>
+                <view class="sourceNtime">
+                    <view class="source">{{item.source}}</view>
+                    <view class="time">{{item.time}}</view>
+                </view>
+            </view>
+                
+        </view>
 </view>
