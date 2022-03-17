@@ -1,1 +1,17 @@
-/* pages/takeout/takeout.wxss */
+.pyg_takeout .takeout_bg {
+  width: 100%;
+  height: calc(100vw * 269 / 400);
+  align-items: center;
+}
+.pyg_takeout .takeout_bg image {
+  width: 100%;
+  z-index: 1;
+}
+.pyg_takeout .takeout_bg .takeout_title {
+  width: 80vw;
+  height: 240rpx;
+  position: absolute;
+  background-color: #fff;
+  border-radius: 30rpx;
+  z-index: 2;
+}

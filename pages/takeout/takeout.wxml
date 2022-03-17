@@ -1,2 +1,8 @@
 <!--pages/takeout/takeout.wxml-->
-<text>pages/takeout/takeout.wxml</text>
+<view class="pyg_takeout">
+    <view class="takeout_bg">
+        <image src="../../icon/sucai.jpeg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+        </image>
+        <view class="takeout_title"></view>
+    </view>
+</view>

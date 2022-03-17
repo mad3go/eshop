@@ -2,5 +2,6 @@
   "component": true,
   "usingComponents": {
     "tabs":"../../components/tabs/tabs"
-  }
+  },
+  "navigationBarTitleText": " 订单"
 }

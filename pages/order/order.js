@@ -1,13 +1,46 @@
 // pages/order/order.js
 Page({
-
   /**
    * 页面的初始数据
    */
   data: {
-
+    tabs:[
+      {
+        id:0,
+        name:"全部",
+        isActive:true
+      },
+      {
+        id:1,
+        name:"待付款",
+        isActive:false
+      },
+      {
+        id:2,
+        name:"待收取",
+        isActive:false
+      },
+      {
+        id:3,
+        name:"已付款",
+        isActive:false
+      }
+    ],
+    orderListNums:6,   //暂定是6，正式的数量需要从后台取出
+    orderList:[{
+      
+    }]
   },
-
+//自定义事件，用来接收子组件传递过来的数据
+  handleItemChange(e) {
+    //接受子组件传递过来的参数
+    const {index} = e.detail;
+    let {tabs} = this.data;
+    tabs.forEach((v,i) => i === index ? v.isActive = true : v.isActive = false);
+    this.setData({
+      tabs
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
