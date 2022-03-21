@@ -1,20 +1,112 @@
+@bgColor:#ee704a;
+page{
+    height: 100%;
+}
 .pyg_takeout{
+    height: 100%;
     .takeout_bg{
         width: 100%;
         height: calc(100vw * 269 / 400);
         align-items: center;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
         image{
             width: 100%;
+            height: calc(100vw * 269 / 400);
+            position: absolute;
             z-index: 1;
         }
         .takeout_title{
             width: 80vw;
-            height: 240rpx;
+            height: 280rpx;
             position: absolute;
             background-color: #fff;
-            border-radius: 30rpx;
+            border-radius: 40rpx;
             z-index: 2;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .takeout_icon{
+                height: 200rpx;
+                width: 200rpx;
+                border-radius: 100rpx;
+                background-color: @bgColor;
+                position: absolute;
+                z-index: 3;
+                margin-top: -320rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                image{
+                    height: 100rpx;
+                    width: 100rpx;
+                    z-index: 4;
+                }
+            }
+            .takeout_title_name{
+                height: 100rpx;
+                width: 200rpx;
+                font-size: 50rpx;
+                position: absolute;
+                z-index: 3;
+            }
+            .takeout_cdt{
+                width: 80vw;
+                height: 60rpx;
+                margin-bottom: -177rpx;
+                border-radius: 20rpx;
+                z-index: 3;
+                display: flex;
+                justify-content: space-around;
+                view{
+                    height: 60rpx;
+                    width: 180rpx;
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: space-around;
+                    text-align: center;
+                    line-height: 60rpx;
+                    background-color: #d8ecdd;
+                    border-radius: 20rpx;
+                    .data_text{
+                        margin-left: -40rpx;
+                    }
+                }
+            }
         }
     }
-    
+    .cates_container{
+        height: calc( 100vh - 600rpx );
+        display:flex;
+        .left_menu{
+            flex:2;
+            background-color: #f0f0f0;
+        }
+        .right_content{
+            flex:5;
+            background-color: #fff;
+        }
+    }
+    .shop_bar{
+        height: 100rpx;
+        display: flex;
+        position: relative;
+        .buy_info{
+            flex:1;
+            display: flex;
+            background-color: #f0f0f0;
+            justify-content: center;
+            align-items: center;
+        }
+        .buy{
+            flex:1;
+            background-color: #797979;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
 }

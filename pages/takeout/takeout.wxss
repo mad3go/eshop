@@ -1,17 +1,110 @@
+page {
+  height: 100%;
+}
+.pyg_takeout {
+  height: 100%;
+}
 .pyg_takeout .takeout_bg {
   width: 100%;
   height: calc(100vw * 269 / 400);
   align-items: center;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
 }
 .pyg_takeout .takeout_bg image {
   width: 100%;
+  height: calc(100vw * 269 / 400);
+  position: absolute;
   z-index: 1;
 }
 .pyg_takeout .takeout_bg .takeout_title {
   width: 80vw;
-  height: 240rpx;
+  height: 280rpx;
   position: absolute;
   background-color: #fff;
-  border-radius: 30rpx;
+  border-radius: 40rpx;
   z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.pyg_takeout .takeout_bg .takeout_title .takeout_icon {
+  height: 200rpx;
+  width: 200rpx;
+  border-radius: 100rpx;
+  background-color: #ee704a;
+  position: absolute;
+  z-index: 3;
+  margin-top: -320rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pyg_takeout .takeout_bg .takeout_title .takeout_icon image {
+  height: 100rpx;
+  width: 100rpx;
+  z-index: 4;
+}
+.pyg_takeout .takeout_bg .takeout_title .takeout_title_name {
+  height: 100rpx;
+  width: 200rpx;
+  font-size: 50rpx;
+  position: absolute;
+  z-index: 3;
+}
+.pyg_takeout .takeout_bg .takeout_title .takeout_cdt {
+  width: 80vw;
+  height: 60rpx;
+  margin-bottom: -177rpx;
+  border-radius: 20rpx;
+  z-index: 3;
+  display: flex;
+  justify-content: space-around;
+}
+.pyg_takeout .takeout_bg .takeout_title .takeout_cdt view {
+  height: 60rpx;
+  width: 180rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  line-height: 60rpx;
+  background-color: #d8ecdd;
+  border-radius: 20rpx;
+}
+.pyg_takeout .takeout_bg .takeout_title .takeout_cdt view .data_text {
+  margin-left: -40rpx;
+}
+.pyg_takeout .cates_container {
+  height: calc(100vh - 600rpx);
+  display: flex;
+}
+.pyg_takeout .cates_container .left_menu {
+  flex: 2;
+  background-color: #f0f0f0;
+}
+.pyg_takeout .cates_container .right_content {
+  flex: 5;
+  background-color: #fff;
+}
+.pyg_takeout .shop_bar {
+  height: 100rpx;
+  display: flex;
+  position: relative;
+}
+.pyg_takeout .shop_bar .buy_info {
+  flex: 1;
+  display: flex;
+  background-color: #f0f0f0;
+  justify-content: center;
+  align-items: center;
+}
+.pyg_takeout .shop_bar .buy {
+  flex: 1;
+  background-color: #797979;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

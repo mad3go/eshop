@@ -1,3 +1,5 @@
+import { request } from "../../request/index";
+
 // pages/takeout/takeout.js
 Page({
 
@@ -5,14 +7,40 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    scores:4.8,
+    leftTime:40,
+    takeoutType:"支持自取",
+    takeoutCost:2,
+    //左侧菜单书籍
+    leftMenuList:[],
+    rightContent:[]
   },
+  //接口的返回数据
+  Cates:[],
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    this.getCates();
+  },
+  //获取分类数据
+  getCates(){
+    request({
+      url:"https://api.zbztb.cn/api/public/v1/home/swiperdata"
+    })
+    .then(res =>{
+      //console.log(res);
+      this.Cates=res.data.message;
+      //构造左侧的大菜单数据
+      let leftMenuList = this.Cates.map(v=>v.cates_name);
+      //构造右侧商品数据
+      let rightContent = this.cates[0].children 
+      this.setData({
+        leftMenuList,
+        rightContent
+      })
+    })
   },
 
   /**

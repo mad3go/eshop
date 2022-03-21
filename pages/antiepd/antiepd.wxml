@@ -3,4 +3,17 @@
     <swiper-item> <image lazy-load mode="aspectFill" src="//image.baidu.com/search/down?tn=download&word=download&ie=utf8&fr=detail&url=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%253A%252F%252Fpicture.youth.cn%252Fqtdb%252F202001%252FW020200123358900632957.jpg%26refer%3Dhttp%253A%252F%252Fpicture.youth.cn%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1648123860%26t%3D6e6862cd123d9bfaa13c8221627c1ea4&thumburl=https%3A%2F%2Fimg0.baidu.com%2Fit%2Fu%3D2230828549%2C4028561462%26fm%3D253%26fmt%3Dauto%26app%3D120%26f%3DJPEG%3Fw%3D638%26h%3D396"></image> </swiper-item>
     <swiper-item> <image lazy-load mode="aspectFill" src="//image.baidu.com/search/down?tn=download&word=download&ie=utf8&fr=detail&url=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%253A%252F%252Finews.gtimg.com%252Fnewsapp_match%252F0%252F11391599916%252F0.jpg%26refer%3Dhttp%253A%252F%252Finews.gtimg.com%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1648123957%26t%3D9cf92c6cc8c0e989c78a892cbd79c836&thumburl=https%3A%2F%2Fimg0.baidu.com%2Fit%2Fu%3D1576404397%2C1258280683%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG%3Fw%3D500%26h%3D324"></image> </swiper-item>
     <swiper-item> <image lazy-load mode="aspectFill" src="//image.baidu.com/search/down?tn=download&word=download&ie=utf8&fr=detail&url=https%3A%2F%2Fgimg2.baidu.com%2Fimage_search%2Fsrc%3Dhttp%253A%252F%252Finews.gtimg.com%252Fnewsapp_match%252F0%252F11279661527%252F0.jpg%26refer%3Dhttp%253A%252F%252Finews.gtimg.com%26app%3D2002%26size%3Df9999%2C10000%26q%3Da80%26n%3D0%26g%3D0n%26fmt%3Djpeg%3Fsec%3D1648123536%26t%3De2232e588b3851019a2a6623e9fb1955&thumburl=https%3A%2F%2Fimg1.baidu.com%2Fit%2Fu%3D1383630769%2C1126500247%26fm%3D253%26fmt%3Dauto%26app%3D138%26f%3DJPEG%3Fw%3D500%26h%3D231"></image> </swiper-item>
+    <!--以上是暂时没有接口时使用展示的示例，以下是有接口用后轮播图的动态渲染-->
+    <!--
+        <swiper autoplay indicator-dots circule>
+            <swiper-item
+            wx:for="{{swiperList}}"
+            wx:key="id"   这个绑定什么具体看有接口后AppData的内容
+            >
+                <navigator>
+                    <image src"{{item.image_src}}"/>   这个item.image_src是暂定的，具体正确的也是有接口后看AppData内容再确认
+                </navigator>
+            </swiper-item>
+        </swiper>
+    -->
 </swiper>
