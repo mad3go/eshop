@@ -17,7 +17,7 @@ Page({
   },
   //接口的返回数据
   Cates:[],
-
+  Items:[],
   /**
    * 生命周期函数--监听页面加载
    */
@@ -27,22 +27,41 @@ Page({
   //获取分类数据
   getCates(){
     request({
-      url:"https://api.zbztb.cn/api/public/v1/home/swiperdata"
+      url:"http://1.12.233.114:8099/category/queryAll"
     })
     .then(res =>{
-      //console.log(res);
-      this.Cates=res.data.message;
+      this.Cates=res.data.data.page.records;
       //构造左侧的大菜单数据
-      let leftMenuList = this.Cates.map(v=>v.cates_name);
-      //构造右侧商品数据
-      let rightContent = this.cates[0].children 
+      let leftMenuList = this.Cates.map(v=>v.name);
+      //console.log(leftMenuList );
       this.setData({
-        leftMenuList,
-        rightContent
+        leftMenuList
+        //rightContent
       })
     })
   },
-
+  //获取点击eftMenuList分类Cates时数据并返回给后端
+  
+  //
+  handleItemChange(e){
+    const {index} = e.currentTarget.dataset;
+    let name = this.Cates[index].name;
+    //console.log(name);
+    request({
+      url:"http://1.12.233.114:8099/category/queryProductByCategoryName",
+      data:{
+        categoryName: name
+      }
+    })
+    .then(res =>{
+      this.Items = res.data.data.category_products.records;
+      let rightContent = this.Items.map(v=>v.categoryName);
+      console.log(res);
+       this.setData({
+         rightContent
+       })
+    })
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

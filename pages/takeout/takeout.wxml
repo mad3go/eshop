@@ -27,12 +27,19 @@
             <view class="menu_item"
             wx:for="{{leftMenuList}}"
             wx:key="*this"
+            bindtap="handleItemChange"
+            data-index="{{index}}"
             >
             {{item}}</view>
         </scroll-view>
         <!--右侧菜单-->
         <scroll-view scroll-y class="right_content">
-            
+            <view class="content_item"
+            wx:for="{{rightContent}}"
+            wx:key="id"
+            >
+        {{item}}
+        </view>
         </scroll-view>
     </view>
     <view class="shop_bar">

@@ -1,0 +1,7 @@
+<!--pages/test/test.wxml-->
+<scroll-view class="sv_tag" scroll-x="{{true}}" enable-flex="{{true}}">
+    <view class="tag1">米面粮油</view>
+    <view class="tag2">果蔬生鲜</view>
+    <view class="tag3">生活用品</view>
+    <view class="tag4">医护用品</view>
+</scroll-view>

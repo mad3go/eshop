@@ -3,7 +3,7 @@
         <view class="all_page">
             <view class="order_list" 
             wx:for="{{orderList}}"
-            key="lid"
+            wx:key="*this"
             >
 
             </view>

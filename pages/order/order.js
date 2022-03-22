@@ -1,3 +1,5 @@
+import { request } from "../../request/index";
+
 // pages/order/order.js
 Page({
   /**
@@ -26,10 +28,7 @@ Page({
         isActive:false
       }
     ],
-    orderListNums:6,   //暂定是6，正式的数量需要从后台取出
-    orderList:[{
-      
-    }]
+    orderList:[]
   },
 //自定义事件，用来接收子组件传递过来的数据
   handleItemChange(e) {
@@ -41,11 +40,19 @@ Page({
       tabs
     })
   },
+  // getList(){
+  //   request({
+  //     url:"http://1.12.233.114:8099/category/queryProductByCategoryName"
+  //   })
+  //   .then(res=>{
+  //     console.log(res);
+  //   })
+  // },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    //this.getList();
   },
 
   /**

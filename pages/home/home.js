@@ -4,7 +4,7 @@
 //然后将时间戳转成几个小时、几分钟等格式
 //var time = timestamp.getDateDiff(stamp);
 
-import { request } from "../../request/index"
+//import { request } from "../../request/index"
 
 // pages/home/home.js
 Page({
@@ -22,7 +22,7 @@ Page({
     }],
     cateList:[{
 
-    }]
+    }],
   },
   
 
@@ -30,15 +30,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.getCateList       //分类页面
-  },
-  getCateList(){
-    request({url:""})
-    .then(result=>{
-      this.setData({
-        cataList:result.data.message
-      })
-    })
+          
   },
   /**
    * 生命周期函数--监听页面初次渲染完成
