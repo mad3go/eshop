@@ -5,3 +5,5 @@
     <view class="tag3">生活用品</view>
     <view class="tag4">医护用品</view>
 </scroll-view>
+
+<selector>点这里</selector>

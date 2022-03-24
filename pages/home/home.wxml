@@ -6,14 +6,21 @@
         <view class="discover_text">
             <text>发现</text>
         </view>
-        <view class="discover_tabs">
-            <scroll-view class="scroll_view_tag" scroll-x>
-                <view class="tag1" hover-class="tag_hover">米面粮油</view>
-                <view class="tag2" hover-class="tag_hover">果蔬生鲜</view>
-                <view class="tag3" hover-class="tag_hover">生活用品</view>
-                <view class="tag4" hover-class="tag_hover">医护用品</view>
-            </scroll-view>
-        </view>
+        <!-- <view class="discover_tabs">
+                <view class="tag" hover-class="tag_hover">米面粮油</view>
+                <view class="tag" hover-class="tag_hover">果蔬生鲜</view>
+                <view class="tag" hover-class="tag_hover">生活用品</view>
+                <view class="tag" hover-class="tag_hover">医护用品</view>
+        </view> -->
+        <tab tabs="{{homeTabs}}">
+    <block wx:if="{{HomeTabs[0].isActive}}">
+        <!-- 内容 -->
+    </block>
+    <block wx:elif="{{HomeTabs[1].isActive}}">2</block>
+    <block wx:elif="{{HomeTabs[2].isActive}}">3</block>
+    <block wx:elif="{{HomeTabs[3].isActive}}">4</block>
+        </tab>
+        
         <view class="discover_text">
             <text>热门店铺</text>
         </view>

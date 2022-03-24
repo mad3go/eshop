@@ -1,0 +1,16 @@
+.homeTabs {
+  height: 90rpx;
+}
+.homeTabs .tabs_title {
+  height: 90rpx;
+  display: flex;
+}
+.homeTabs .tabs_title .title_item {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.active {
+  color: red;
+}

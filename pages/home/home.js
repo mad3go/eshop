@@ -23,12 +23,43 @@ Page({
     cateList:[{
 
     }],
+    homeTabs:[
+      {
+        id:0,
+        name:"米面粮油",
+        isActive:true
+      },
+      {
+        id:1,
+        name:"果蔬生鲜",
+        isActive:false
+      },
+      {
+        id:2,
+        name:"生活用品",
+        isActive:false
+      },
+      {
+        id:3,
+        name:"医护用品",
+        isActive:false
+      }
+    ]
   },
   
 
   /**
    * 生命周期函数--监听页面加载
    */
+   handleItemChange(e) {
+    //接受子组件传递过来的参数
+    const {index} = e.detail;
+    let {homeTabs} = this.data;
+    tabs.forEach((v,i) => i === index ? v.isActive = true : v.isActive = false);
+    this.setData({
+      homeTabs
+    })
+  },
   onLoad: function (options) {
           
   },

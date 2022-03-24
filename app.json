@@ -7,10 +7,14 @@
     "pages/antiepd/antiepd",
     "pages/profile/profile",
     "pages/takeout/takeout",
-    "components/searchInput",
     "components/searchInput/searchInput",
+    "components/regionSelector/regionSelector",
     "pages/test",
-    "pages/test/test"
+    "pages/test/test",
+    "pages/navigator/payment/payment",
+    "pages/navigator/f2pay/f2pay",
+    "pages/navigator/s2pay/s2pay",
+    "pages/navigator/address/editAddress/editAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",

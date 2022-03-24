@@ -44,8 +44,29 @@
           "name": "",
           "pathName": "pages/index/index",
           "query": "",
-          "scene": null,
-          "launchMode": "default"
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/takeout/takeout",
+          "query": "categoryName=\"猫猫\"",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "",
+          "pathName": "pages/navigator/s2pay/s2pay",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
+        {
+          "name": "地址",
+          "pathName": "pages/navigator/address/editAddress/editAddress",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
         }
       ]
     }

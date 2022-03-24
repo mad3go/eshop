@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {},
+  "navigationBarTitleText":"外卖",
+  "enablePullDownRefresh":true,
+  "backgroundTextStyle":"dark"
 }

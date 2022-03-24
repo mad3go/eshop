@@ -1,0 +1,21 @@
+<!--pages/navigator/address/editAddress/editAddress.wxml-->
+<view class="name">
+    <view class="name_title">收货人</view>
+    <input auto-focus placeholder="请输入姓名"/>
+</view>
+
+<view class="phone">
+    <view class="phone_title">联系电话</view>
+    <input auto-focus placeholder="请输入11位手机号"/>
+</view>
+
+<view class="location">
+<view class="locate_title">所在地区</view>
+<selector region="{{region}}" bindPicker="handlePickerChange"></selector>
+</view>
+<!-- 下拉框 -->
+<view class="address">
+    <view class="address_title">详细地址</view>
+    <input auto-focus placeholder="街道门牌号"/>
+</view>
+<view class="btn_title">设置为默认地址</view>
