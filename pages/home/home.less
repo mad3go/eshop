@@ -21,59 +21,117 @@
         }
     }
 
-    .discover_wangpu{
-        width: 1800rpx;
-        height: 550rpx;
-        margin: 20rpx;
-        .scroll_view_wangpu{
-            width: 100%;
-            height: 550rpx;
+    .scroll_tag{
+        height:60rpx;
+        .flex_tag{
             display: flex;
-            flex-direction: row;
-            justify-content: baseline;
-            .wangpu{
-                width: 620rpx;
-                height: 540rpx;
-                display: flex;
-                flex-direction: column;
-                background-color: @backgroundColor;
-                border-radius: 30rpx;
-                image{
-                    display: flex;
-                    flex-direction: row;
-                    width: 620rpx;
-                    height: calc(310 * 269 / 400);
-                    border-top-left-radius: 30rpx;
-                    border-top-right-radius: 30rpx;
-                    z-index: 0;
-                }
-                .rate{
-                    width: 130rpx;
-                    height: 70rpx;
-                    background-color: @backgroundColor;
-                    position: absolute;
-                    margin-top: 20rpx;
-                    margin-left: 20rpx;
-                    border-radius: 40rpx;
-                    z-index: 2;
-                    text{
-                        width: 130rpx;
-                        height: 70rpx;
-                        position: relative;
-                        display: inline-block;
-                        vertical-align: bottom;
-                    }
-                }
-                .wangpu_info{
-                    width: 620rpx;
-                    height: 200rpx;
+            flex-wrap: nowrap;
+            .tag_parent{
+                display:inline-block;
+                .tag_item{
+                    width:190rpx;
+                    height:60rpx;
+                    background:#d0e4d5;
+                    margin-right:20rpx;
+                    margin-left:20rpx;
                     border-radius: 30rpx;
-                    background-color: @backgroundColor;
-                    z-index: 1;
+                    text-align: center;
+                    line-height: 60rpx;
+                }
+            }
+        } 
+    }
+    .scroll_wangpu{
+        height: 450rpx;
+        .flex_wangpu{
+            display: flex;
+            flex-wrap: nowrap;
+            .wangpu_parent{
+                display:inline-block;
+                .wangpu_item{
+                    width:600rpx;
+                    height:450rpx;
+                    background-color:@backgroundColor;
+                    margin-right:30rpx;
+                    margin-left:30rpx;
+                    border-radius: 30rpx;
+                    display: flex;
+                    flex-direction: column;
+                    image{
+                        border-top-right-radius: 30rpx;
+                        border-top-left-radius: 30rpx;
+                        width:600rpx;
+                        height: 300rpx;
+                        
+                    }
+                    .rate{
+                        width: 100rpx;
+                        height: 50rpx;
+                        background-color: @backgroundColor;
+                        position: absolute;
+                        margin-left: 20rpx;
+                        margin-top: 20rpx;
+                        border-radius: 30rpx;
+                        line-height: 50rpx;
+                        .rate_goals{
+                            margin-left: 10rpx;
+                        }
+                    }
+                    .wangpu_info{
+                        height: 150rpx;
+                        display: flex;
+                        flex-direction: column;
+                        .wangpu_info_name{
+                            font-size: 30rpx;
+                            font-weight: bold;
+                            margin-left: 20rpx;
+                            margin-top: 10rpx;
+                        }
+                        .wangpu_locationNtime{
+                            display: flex;
+                            flex-direction: row;
+                            height: 50rpx;
+                            .wangpu_location{
+                                height: 40rpx;
+                                width: 150rpx;
+                                margin-left: 20rpx;
+                                .wangpu_loc_info{
+                                    line-height: 40rpx;
+                                    margin-left: 20rpx;
+                                }
+                            }
+                            .wangpu_time{
+                                height: 40rpx;
+                                width: 150rpx;
+                                margin-left: 20rpx;
+                                .wangpu_time_info{
+                                    line-height: 40rpx;
+                                    margin-left: 20rpx;
+                                }
+                            }
+                        }
+                        .associate_tag{
+                            width: 100%;
+                            height: 40rpx;
+                            display: flex;
+                            flex-direction: row;
+                            .associate_tag_item{
+                                height: 40rpx;
+                                width: 150rpx;
+                                line-height: 40rpx;
+                                text-align: center;
+                                border-radius: 30rpx;
+                                background-color: @themeColor;
+                                margin-left: 20rpx;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
+    
+
     .antiepd_info{
         width: 90%;
         height: 250rpx;
@@ -127,5 +185,6 @@
 }
 .tag_hover{
     opacity: 0.9;
-    background: #f7f7f7;
+    background: @themeColor;
+    color: #fff;
 }

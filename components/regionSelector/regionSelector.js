@@ -22,8 +22,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    bindRegionChange: function (e) {
-      console.log('picker发送选择改变，携带值为', e.detail.value)
+    bindRegionChange(e) {
+      console.log(e.detail.value);
+      console.log(e);
+      //console.log('picker发送选择改变，携带值为', e.detail.value);
       this.setData({
         region: e.detail.value
       })

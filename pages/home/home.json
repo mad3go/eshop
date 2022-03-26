@@ -1,8 +1,7 @@
 {
   "component": true,
   "usingComponents": {
-    "searchInput":"../../components/searchInput/searchInput",
-    "tabs":"../../components/homeTabs/homeTabs"
+    "searchInput":"../../components/searchInput/searchInput"
   },
     "navigationBarTitleText": " 首页"
 }

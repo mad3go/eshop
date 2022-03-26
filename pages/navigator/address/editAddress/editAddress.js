@@ -8,8 +8,8 @@ Page({
     region: ['广东省', '广州市', '海珠区'],
     customItem: '全部'
   },
+
   handlePickerChange(e){
-    
   },
   /**
    * 生命周期函数--监听页面加载

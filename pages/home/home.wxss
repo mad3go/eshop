@@ -19,58 +19,113 @@
   font-size: 40rpx;
   color: #333333;
 }
-.pyg_home .discover_wangpu {
-  width: 1800rpx;
-  height: 550rpx;
-  margin: 20rpx;
+.pyg_home .scroll_tag {
+  height: 60rpx;
 }
-.pyg_home .discover_wangpu .scroll_view_wangpu {
-  width: 100%;
-  height: 550rpx;
+.pyg_home .scroll_tag .flex_tag {
   display: flex;
-  flex-direction: row;
-  justify-content: baseline;
+  flex-wrap: nowrap;
 }
-.pyg_home .discover_wangpu .scroll_view_wangpu .wangpu {
-  width: 620rpx;
-  height: 540rpx;
+.pyg_home .scroll_tag .flex_tag .tag_parent {
+  display: inline-block;
+}
+.pyg_home .scroll_tag .flex_tag .tag_parent .tag_item {
+  width: 190rpx;
+  height: 60rpx;
+  background: #d0e4d5;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  line-height: 60rpx;
+}
+.pyg_home .scroll_wangpu {
+  height: 450rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent {
+  display: inline-block;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item {
+  width: 600rpx;
+  height: 450rpx;
+  background-color: #fff;
+  margin-right: 30rpx;
+  margin-left: 30rpx;
+  border-radius: 30rpx;
   display: flex;
   flex-direction: column;
-  background-color: #fff;
-  border-radius: 30rpx;
 }
-.pyg_home .discover_wangpu .scroll_view_wangpu .wangpu image {
-  display: flex;
-  flex-direction: row;
-  width: 620rpx;
-  height: calc(310 * 269 / 400);
-  border-top-left-radius: 30rpx;
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item image {
   border-top-right-radius: 30rpx;
-  z-index: 0;
+  border-top-left-radius: 30rpx;
+  width: 600rpx;
+  height: 300rpx;
 }
-.pyg_home .discover_wangpu .scroll_view_wangpu .wangpu .rate {
-  width: 130rpx;
-  height: 70rpx;
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .rate {
+  width: 100rpx;
+  height: 50rpx;
   background-color: #fff;
   position: absolute;
-  margin-top: 20rpx;
   margin-left: 20rpx;
-  border-radius: 40rpx;
-  z-index: 2;
-}
-.pyg_home .discover_wangpu .scroll_view_wangpu .wangpu .rate text {
-  width: 130rpx;
-  height: 70rpx;
-  position: relative;
-  display: inline-block;
-  vertical-align: bottom;
-}
-.pyg_home .discover_wangpu .scroll_view_wangpu .wangpu .wangpu_info {
-  width: 620rpx;
-  height: 200rpx;
+  margin-top: 20rpx;
   border-radius: 30rpx;
-  background-color: #fff;
-  z-index: 1;
+  line-height: 50rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .rate .rate_goals {
+  margin-left: 10rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info {
+  height: 150rpx;
+  display: flex;
+  flex-direction: column;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .wangpu_info_name {
+  font-size: 30rpx;
+  font-weight: bold;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .wangpu_locationNtime {
+  display: flex;
+  flex-direction: row;
+  height: 50rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .wangpu_locationNtime .wangpu_location {
+  height: 40rpx;
+  width: 150rpx;
+  margin-left: 20rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .wangpu_locationNtime .wangpu_location .wangpu_loc_info {
+  line-height: 40rpx;
+  margin-left: 20rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .wangpu_locationNtime .wangpu_time {
+  height: 40rpx;
+  width: 150rpx;
+  margin-left: 20rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .wangpu_locationNtime .wangpu_time .wangpu_time_info {
+  line-height: 40rpx;
+  margin-left: 20rpx;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .associate_tag {
+  width: 100%;
+  height: 40rpx;
+  display: flex;
+  flex-direction: row;
+}
+.pyg_home .scroll_wangpu .flex_wangpu .wangpu_parent .wangpu_item .wangpu_info .associate_tag .associate_tag_item {
+  height: 40rpx;
+  width: 150rpx;
+  line-height: 40rpx;
+  text-align: center;
+  border-radius: 30rpx;
+  background-color: #60b173;
+  margin-left: 20rpx;
 }
 .pyg_home .antiepd_info {
   width: 90%;
@@ -124,5 +179,6 @@
 }
 .tag_hover {
   opacity: 0.9;
-  background: #f7f7f7;
+  background: #60b173;
+  color: #fff;
 }

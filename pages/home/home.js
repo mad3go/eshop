@@ -13,6 +13,13 @@ Page({
    * 页面的初始数据
    */
   data: {
+    wangpu:[{
+      id:0, img:'../../icon/sucai.jpeg', name:'哆鹿生鲜', rateGoals:'4.5', distances:'3.5', time:'30', tag:[{tagName:'米面粮油'},{tagName:'果蔬生菜'},{tagName:'生活用品'}]
+    },{
+      id:1, img:'../../icon/roupian.jpeg', name:'什么什么', rateGoals:'4.0', distances:'7.5', time:'90', tag:[{tagName:'米面粮油'},{tagName:'果蔬生菜'}]
+    },{
+      id:2, img:'../../icon/roupian.jpeg', name:'七七八八', rateGoals:'4.6', distances:'9.5', time:'50', tag:[{tagName:'生活用品'}]
+    }],
     antiepd_info_list:[{
       img:'../../icon/sucai.jpeg', title:'截至21日8时，上海累计排查管控3853人核酸检测均阴性', source:'绿政公署', time:50+'分钟前' ,unique:'page1'
     },{
