@@ -1,4 +1,3 @@
-/* components/searchInput/searchInput.wxss */
 .search_input {
   height: 80rpx;
   padding: 10rpx;

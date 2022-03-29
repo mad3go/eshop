@@ -1,20 +1,27 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/order/order",
     "pages/index/index",
     "pages/logs/logs",
     "pages/antiepd/antiepd",
-    "pages/order/order",
     "pages/profile/profile",
     "pages/takeout/takeout",
-    "components/searchInput",
-    "components/searchInput/searchInput"
+    "components/searchInput/searchInput",
+    "components/regionSelector/regionSelector",
+    "pages/test",
+    "pages/test/test",
+    "pages/navigator/payment/payment",
+    "pages/navigator/f2pay/f2pay",
+    "pages/navigator/s2pay/s2pay",
+    "pages/navigator/address/editAddress/editAddress"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "list": [

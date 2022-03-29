@@ -1,2 +1,15 @@
-<!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<tabs tabs="{{tabs}}" binditemChange="handleItemChange">
+    <block wx:if="{{tabs[0].isActive}}">
+        <view>2222</view>
+        <view class="all_page">
+            <view class="order_list" 
+            wx:for="{{orderList}}"
+            wx:key="*this"
+            >
+            </view>
+        </view>
+    </block>
+    <block wx:elif="{{tabs[1].isActive}}">2</block>
+    <block wx:elif="{{tabs[2].isActive}}">3</block>
+    <block wx:elif="{{tabs[3].isActive}}">4</block>
+</tabs>

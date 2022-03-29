@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "selector":"../../components/regionSelector/regionSelector"
+  }
+}

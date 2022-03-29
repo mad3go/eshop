@@ -1,2 +1,60 @@
 <!--pages/takeout/takeout.wxml-->
-<text>pages/takeout/takeout.wxml</text>
+<view class="pyg_takeout">
+    <view class="takeout_bg">
+        <image src="../../icon/sucai.jpeg" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+        </image>
+        <view class="takeout_title">
+            <view class="takeout_icon">
+                <image src="../../icon/onion.png"/>
+            </view>
+            <text class="takeout_title_name">哆鹿优鲜</text>
+            <view class="takeout_cdt">
+                <view>
+                    <text class="iconfont icon-shoucang" style="height:50rpx; width:50rpx; font-size:40rpx; color:#ee704a"></text>
+                    <text class="data_text">{{scores}}</text>
+                </view>
+                <view>
+                    <text class="iconfont icon-gouwuchekong" style="height:50rpx; width:50rpx; font-size:40rpx; color:#ee704a"></text>
+                    <text class="data_text">{{leftTime}}min</text>
+                </view>
+                <view>{{takeoutType}}</view>
+            </view>
+        </view>
+    </view>
+    <view class="cates_container">
+        <!--左侧菜单-->
+        <scroll-view scroll-y class="left_menu">
+            <view class="menu_item {{index===currentIndex?'active':''}}"
+            wx:for="{{leftMenuList}}"
+            wx:key="*this"
+            bindtap="handleItemChange"
+            data-index="{{index}}"
+            >
+            {{item}}</view>
+        </scroll-view>
+        <!--右侧菜单-->
+        <scroll-view scroll-y class="right_content" scroll-top="{{scrollTop}}">
+            <view class="content_item"
+            wx:for="{{rightContent}}"
+            wx:key="id"
+            >   
+                <image class="good_pic" src="../../icon/roupian.jpeg"/>
+                <view class="good_info">
+                    <test class="good_name">{{item}}</test>
+                    <test class="good_price">¥{{price}}</test>
+                    <text class="iconfont icon-tianjia" style="height:50rpx; width:50rpx; font-size:50rpx; margin-left:170rpx; margin-top:20rpx"
+                    bindtap="addGood"
+                    ></text>
+                </view>
+            </view>
+        </scroll-view>
+    </view>
+    <view class="shop_bar">
+        <view class="buy_info">
+            <text class="iconfont icon-gouwuchekong" style="font-size:50rpx;"><text class="buy_info_cost" style="font-size:25rpx; margin-left:40rpx">配送费：{{takeoutCost}}</text></text>
+        </view>
+        <view class="buy" bindtap="goToPay">
+            <text style="font-size:30rpx;">请点餐</text>
+        </view>
+    </view>
+</view>
