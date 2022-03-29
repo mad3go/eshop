@@ -1,11 +1,11 @@
 <tabs tabs="{{tabs}}" binditemChange="handleItemChange">
     <block wx:if="{{tabs[0].isActive}}">
+        <view>2222</view>
         <view class="all_page">
             <view class="order_list" 
             wx:for="{{orderList}}"
             wx:key="*this"
             >
-
             </view>
         </view>
     </block>

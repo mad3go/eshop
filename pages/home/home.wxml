@@ -42,7 +42,7 @@
                                 </view>
                             </view>
                             <view class="associate_tag">
-                                <view class="associate_tag_item" wx:for="{{item.tag}}" wx:key="index" wx:for-item="tag">{{tag.tagName}}</view>
+                                <view class="associate_tag_item" wx:for="{{item.tag}}" wx:key="index" wx:for-item="tag">{{tag}}</view>
                             </view>
                         </view>
                     </view>
