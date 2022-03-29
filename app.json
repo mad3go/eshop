@@ -49,7 +49,7 @@
                 "iconPath": "icon/_order.png"
             },
             {
-                "pagePath": "pages/profile/profile",
+                "pagePath": "pages/ucenter/home/home",
                 "text": "我的",
                 "selectedIconPath": "icon/profile.png",
                 "iconPath": "icon/_profile.png"
