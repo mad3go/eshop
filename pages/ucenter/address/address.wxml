@@ -1,0 +1,21 @@
+<view class="page">
+  <view class="content b-t">
+    <view class="list mb10" wx:for="{{addressList}}" wx:key="index" data-item="{{item}}" bindtap="editAddress">
+      <view class="wrapper">
+        <view class="address-box">
+          <text wx:if="{{item.default === true}}" class="tag">默认</text>
+          <text class="address">{{item.addressName}} {{item.area}}</text>
+        </view>
+        <view class="u-box">
+          <text class="name">{{item.name}}</text>
+          <text class="mobile">{{item.mobile}}</text>
+        </view>
+      </view>
+      <text class="cuIcon-edit" style="width:50rpx;height:50rpx;" data-item="{{item}}" bindtap="editAddress"></text>
+    </view>
+    
+    <button class="add-btn" bindtap="addAddress">新增地址</button>
+  </view>
+</view>
+
+

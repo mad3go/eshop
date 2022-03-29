@@ -1,0 +1,64 @@
+.mb10 {
+  margin-bottom:10rpx;
+}
+
+page{
+  padding:20rpx;
+  padding-bottom: 120rpx;
+}
+
+.content{
+  position: relative;
+}
+
+.add-btn{
+    position: fixed;
+    left: 30rpx;
+    right: 30rpx;
+    bottom: 16rpx;
+    z-index: 95;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 690rpx !important;
+    height: 80rpx;
+    font-size: 32rpx;
+    color: #fff;
+    background-color: #fa436a;
+    border-radius: 10rpx;
+    box-shadow: 1px 2px 5px rgba(219, 63, 96, 0.4);	
+}
+
+.row{
+		display: flex;
+		align-items: center;
+		position: relative;
+		padding:0 30rpx;
+		height: 110rpx;
+		background: #fff;
+}
+
+.row .tit{
+  flex-shrink: 0;
+  width: 120rpx;
+  font-size: 30rpx;
+  color: #303133;
+}
+
+.row .input{
+  flex: 1;
+  font-size: 30rpx;
+  color: #303133;
+}
+
+.default-row{
+  margin-top: 16rpx;  
+}
+
+.default-row .tit{
+  flex: 1;
+}
+
+.default-row switch{
+  transform: translateX(16rpx) scale(.9);
+}

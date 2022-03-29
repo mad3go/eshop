@@ -1,0 +1,49 @@
+<view class="page">
+  	<scroll-view scroll-x class="bg-white nav text-center" scroll-with-animation :scroll-left="scrollLeft">
+		<view class="cu-item" :class="index==TabCur?'text-green cur':''" wx:for="{{tabList}}" wx:key="index" bindtap="tabSelect" data-id="{{index}}">
+			{{item}}
+		</view>
+	</scroll-view>
+
+	<!-- 订单列表 -->
+	<view wx:for="{{orderList}}" wx:key="index" class="order-item">
+		<view class="i-top b-b">
+			<text class="time">{{item.time}}</text>
+			<text class="state" :style="{color: item.stateTipColor}">{{item.stateTip}}</text>
+			<text 
+				v-if="item.state===9" 
+				class="del-btn yticon icon-iconfontshanchu1"
+				data-id="{{item.id}}"
+				bindtap="deleteOrder"
+			></text>
+		</view>
+		
+		<scroll-view wx:if="{{item.goodsList.length > 1}}" class="goods-box" scroll-x>
+			<view wx:for="{{item.goodsList}}" wx:for-item="goodsItem" wx:key="index" class="goods-item">
+				<image class="goods-img" src="{{goodsItem.image}}" mode="aspectFill"></image>
+			</view>
+		</scroll-view>
+
+		<view wx:if="{{item.goodsList.length === 1}}" class="goods-box-single" wx:for="{{item.goodsList}}" wx:for-item="goodsItem" wx:key="index">
+			<image class="goods-img" src="{{goodsItem.image}}" mode="aspectFill"></image>
+			<view class="right">
+				<text class="title clamp">{{goodsItem.title}}</text>
+				<text class="attr-box">{{goodsItem.attr}}  x {{goodsItem.number}}</text>
+				<text class="price">{{goodsItem.price}}</text>
+			</view>
+		</view>
+		
+		<view class="price-box">
+			共
+			<text class="num">{{item.goodsList.length}}</text>
+			件商品 实付款
+			<text class="price">{{item.price}}</text>
+		</view>
+		<view class="action-box b-t" v-if="item.state != 9">
+			<button class="action-btn" data-item="{{item}}" bindtap="cancelOrder">取消订单</button>
+			<button class="action-btn recom" data-item="{{item}}" bindtap="payOrder">立即支付</button>
+		</view>
+	</view>
+</view>
+
+

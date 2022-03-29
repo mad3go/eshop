@@ -1,0 +1,76 @@
+<!--index.wxml-->
+<scroll-view scroll-y class="scrollPage">
+
+  <view class="user-center-bg">
+    <view class="diy-container">
+    <image class="user-avatar" mode="widthFix" src="{{wechatUserInfo.avatarUrl}}"></image>
+    <view wx:if="{{isLogined === true}}"class="user-nickname">{{wechatUserInfo.nickName}}</view>
+    <button wx:if="{{isLogined === false}}" class="cu-btn round line-white user-loginbtn" bindtap="login">点击登录</button>
+    <image src="/static/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+    </view>
+  </view>
+  
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+  
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/ucenter/address/address" hover-class="none">
+        <text class="cuIcon-settings"></text>
+        <text class="text-grey">收货地址设置</text>
+      </navigator>
+    </view>
+  
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/companyinfo/companyinfo" hover-class="none">
+        <text class="cuIcon-favor text-blue"></text>
+        <text class="text-grey">店铺关注</text>
+      </navigator>
+    </view>
+    
+    
+    <!--
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about" hover-class="none">
+        <text class="cuIcon-cart text-cyan"></text>
+        <text class="text-grey">购物车</text>
+      </navigator>
+    </view>
+    -->
+      
+  
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/ucenter/order/order" hover-class="none">
+        <text class="cuIcon-list text-cyan"></text>
+        <text class="text-grey">我的订单</text>
+      </navigator>
+    </view>
+    
+    
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/ucenter/password/password" hover-class="none">
+        <text class="cuIcon-post text-cyan"></text>
+        <text class="text-grey">修改密码</text>
+      </navigator>
+    </view>
+    
+    
+    <view class="cu-item arrow" bindtap="clearCacheData">
+      <navigator class="content" url="/pages/ucenter/home/home" hover-class="none">
+        <text class="cuIcon-round"></text>
+        <text class="text-grey">清除缓存</text>
+      </navigator>
+    </view>
+      
+  
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/ucenter/about/about" hover-class="none">
+        <text class="cuIcon-info text-cyan"></text>
+        <text class="text-grey">关于小程序</text>
+      </navigator>
+    </view>
+
+
+  </view>
+  
+  <view class="cu-tabbar-height"> </view>
+</scroll-view>
+
