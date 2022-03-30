@@ -1,4 +1,110 @@
-.all_page{
-    display: flex;
-    flex-direction: column;
+.tab{
+    width: 100vw;
+    .order_item{
+        width: 100%;
+        height:400rpx;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+        margin-bottom: 20rpx;
+        .order_title{
+            flex: 1;
+            width: 100%;
+            display: flex;
+            .shop_name{
+                flex: 3;
+                display: flex;
+                justify-content:left;
+                align-items: center;
+                padding-left: 10rpx;
+                .name{
+                    font-size: 36rpx;
+                }
+                .iconfont{}
+            }
+            .wait_pay{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 32rpx;
+                color:#999
+            }
+        }
+        .order_content{
+            flex: 2;
+            display: flex;
+            border-bottom: 1rpx solid #ccc;
+            .goods_list{
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .goods_item{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    margin-right: 30rpx;
+                    .goods_bg{
+                        width:140rpx;
+                        height: 120rpx;
+
+                    }
+                    .goods_num{}
+                }
+            }
+            .order_detail{
+                flex: 1;
+                display: flex;
+                font-size: 32rpx;
+                position: relative;
+                .total_num{
+                    color:#999;
+                    position: absolute;
+                    right:100rpx;
+                    bottom:20rpx;
+
+                }
+                .total_price{
+                    color:var(--themeColor);
+                    position: absolute;
+                    right: 20rpx;
+                    bottom: 25rpx;
+                }
+            }
+        }
+        .order_confirm{
+            flex: 1;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            position: relative;
+            .cancel{
+                width: 240rpx;
+                height: 60rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                font-size: 30rpx;
+                right:210rpx;
+                top:20rpx;
+            }
+            .pay{
+                width: 180rpx;
+                height: 70rpx;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                color:#fff;
+                background-color: #ed714a;
+                border-radius: 10rpx;
+                font-size: 30rpx;
+                right:30rpx;
+                top:20rpx;
+            }
+        }
+    }
 }

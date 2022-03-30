@@ -79,6 +79,27 @@
                     "name": "",
                     "pathName": "pages/antiepd/antiepd",
                     "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "",
+                    "pathName": "pages/navigator/f2pay/f2pay",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "支付页面",
+                    "pathName": "pages/navigator/payment/payment",
+                    "query": "",
+                    "launchMode": "default",
+                    "scene": null
+                },
+                {
+                    "name": "订单页面",
+                    "pathName": "pages/order/order",
+                    "query": "",
                     "scene": null,
                     "launchMode": "default"
                 }

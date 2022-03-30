@@ -58,3 +58,10 @@
 .icon-shuliangjianshao_o:before {
     content: "\eb86";
 }
+
+
+/* 右箭头 */
+
+.icon-youjiantou:before {
+    content: "\e60b";
+}

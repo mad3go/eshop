@@ -1,15 +1,79 @@
 <tabs tabs="{{tabs}}" binditemChange="handleItemChange">
     <block wx:if="{{tabs[0].isActive}}">
-        <view>2222</view>
+        <!-- <view>2222</view>
         <view class="all_page">
             <view class="order_list" 
             wx:for="{{orderList}}"
             wx:key="*this"
             >
             </view>
+        </view> -->
+        <view class="tab">
+            <view class="order_item">
+                <view class="order_title">
+                    <navigator class="shop_name">
+                        <view class="name">哆鹿生鲜</view>
+                        <view class="iconfont icon-youjiantou"></view>
+                    </navigator>
+                    <view class="wait_pay">待付款</view>
+                </view>
+                <view class="order_content">
+                    <view class="goods_list">
+                        <view class="goods_item">
+                            <image class="goods_bg" mode="widthFix" src="../../icon/roupian.jpeg"></image>
+                            <view class="goods_num">x1</view>
+                        </view>
+                        <view class="goods_item">
+                            <image class="goods_bg" mode="widthFix" src="../../icon/roupian.jpeg"></image>
+                            <view class="goods_num">x1</view>
+                        </view>
+                    </view>
+                    <view class="order_detail">
+                        <view class="total_num">共3件， 合计:</view>
+                        <view class="total_price">¥85</view>
+                    </view>
+                </view>
+                <view class="order_confirm">
+                    <view class="cancel">取消订单</view>
+                    <view class="pay">立即付款</view>
+                </view>
+            </view>
+             <view class="order_item">
+                <view class="order_title">
+                    <navigator class="shop_name">
+                        <view class="name">哆鹿生鲜</view>
+                        <view class="iconfont icon-youjiantou"></view>
+                    </navigator>
+                    <view class="wait_pay">待付款</view>
+                </view>
+                <view class="order_content">
+                    <view class="goods_list">
+                        <view class="goods_item">
+                            <image class="goods_bg" mode="widthFix" src="../../icon/roupian.jpeg"></image>
+                            <view class="goods_num">x1</view>
+                        </view>
+                        <view class="goods_item">
+                            <image class="goods_bg" mode="widthFix" src="../../icon/roupian.jpeg"></image>
+                            <view class="goods_num">x1</view>
+                        </view>
+                    </view>
+                    <view class="order_detail">
+                        <view class="total_num">共3件， 合计:</view>
+                        <view class="total_price">¥85</view>
+                    </view>
+                </view>
+                <view class="order_confirm">
+                    <view class="cancel">取消订单</view>
+                    <view class="pay">立即付款</view>
+                </view>
+            </view>
         </view>
     </block>
-    <block wx:elif="{{tabs[1].isActive}}">2</block>
-    <block wx:elif="{{tabs[2].isActive}}">3</block>
+    <block wx:elif="{{tabs[1].isActive}}">
+        2
+    </block>
+    <block wx:elif="{{tabs[2].isActive}}">
+        3
+    </block>
     <block wx:elif="{{tabs[3].isActive}}">4</block>
 </tabs>
