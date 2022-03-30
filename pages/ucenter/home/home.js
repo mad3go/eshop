@@ -1,3 +1,4 @@
+
 // pages/profile/profile.js
 Page({
 
@@ -88,21 +89,29 @@ Page({
 
   // 点击登录按钮的逻辑
   login(){
-    console.log("login()执行")
-    wx.getUserProfile({
-      desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
-      success: (res) => {
-        // 获取成功了
-        console.log(res)
+    // console.log("login()执行")
+    // wx.getUserProfile({
+    //   desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+    //   success: (res) => {
+    //     // 获取成功了
+    //     console.log(res)
         
-        this.setData({"wechatUserInfo":res.userInfo})  // 设置用户信息
-        this.setData({"isLogined": true})              // 设置已经登录状态
+    //     this.setData({"wechatUserInfo":res.userInfo})  // 设置用户信息
+    //     this.setData({"isLogined": true})              // 设置已经登录状态
         
-        console.log(this.data.wechatUserInfo)
+    //     console.log(this.data.wechatUserInfo)
+    //   },
+    //   fail: (res) => {
+    //     console.log(res)
+    //   },
+    // })
+    wx.navigateTo({
+      url: '../../navigator/login/login',
+      success: (result)=>{
+        
       },
-      fail: (res) => {
-        console.log(res)
-      },
-    })
+      fail: ()=>{},
+      complete: ()=>{}
+    });
   }
 })
