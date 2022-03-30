@@ -13,7 +13,7 @@
             </swiper>
             <!-- 轮播图 -->
         <!-- 疫情信息 -->
-        <view class="antiepd_info" wx:for="{{antiepd_info_list}}" wx:for-index="antiepd" wx:for-item="item" wx:key="unique">
+        <view class="antiepd_info" wx:for="{{antiepd_info_list1}}" wx:for-index="antiepd" wx:for-item="item" wx:key="unique">
             <image src="{{item.img}}"></image>
             <view class="antiepd_info_detail">
                 <view class="title">{{item.title}}</view>
@@ -26,10 +26,28 @@
         <!-- 疫情信息 -->
         <!-- 疫情新增人数 -->
         <view class="increase_title">
-            <view class="increase_title_text"></view>
-            <view class="date"></view>
+            <view class="increase_title_text">国内疫情</view>
+            <view class="date">截止到{{covid_increase.outer}}</view>
         </view>
+        <view class="increase_info">
+                <view class="inner_total"></view>
+                <view class="city_total"></view>
+                <view class="outer_input"></view>
+                <view class="total"></view>
+            </view>
         <!-- 疫情新增人数 -->
+
+        <view class="antiepd_info" wx:for="{{antiepd_info_list2}}" wx:for-index="antiepd" wx:for-item="item" wx:key="unique">
+            <image src="{{item.img}}"></image>
+            <view class="antiepd_info_detail">
+                <view class="title">{{item.title}}</view>
+                <view class="sourceNtime">
+                    <view class="source">{{item.source}}</view>
+                    <view class="time">{{item.time}}</view>
+                </view>
+            </view>
+        </view>
+
         </block>
          <!-- 第一个页面 -->
         <block wx:if="{{tabs[1].isActive}}">

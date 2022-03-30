@@ -26,7 +26,14 @@ Page({
         isActive:false
       }
     ],
-    antiepd_info_list:[{
+    antiepd_info_list1:[{
+      img:'../../icon/sucai.jpeg', title:'截至21日8时，上海累计排查管控3853人核酸检测均阴性', source:'央视新闻', time:50+'分钟前' ,unique:'page1'
+    },{
+      img:'../../icon/roupian.jpeg', title:'国家卫健委：昨日新增本土确诊93例、本土无症状30例', source:'绿政公署', time:50+'分钟前' ,unique:'page2'
+    },{
+      img:'../../icon/roupian.jpeg', title:'武汉新增10例阳性感染者，均与培训班相关', source:'真理部', time:50+'分钟前' ,unique:'page3'
+    }],
+    antiepd_info_list2:[{
       img:'../../icon/sucai.jpeg', title:'截至21日8时，上海累计排查管控3853人核酸检测均阴性', source:'央视新闻', time:50+'分钟前' ,unique:'page1'
     },{
       img:'../../icon/roupian.jpeg', title:'国家卫健委：昨日新增本土确诊93例、本土无症状30例', source:'绿政公署', time:50+'分钟前' ,unique:'page2'
@@ -38,10 +45,8 @@ Page({
         cname:"上海", nums:"3"
       },{
         cname:"辽宁", nums:"1"
-      }]
-    },{
-      outer:9, input:9, nowNums:2903
-    },{
+      }],
+      outer:9, input:9, nowNums:2903, date:"2021年11月26日10:00"
     }],
     swiperCurrent:0
   },

@@ -60,3 +60,52 @@
   font-size: 25rpx;
   color: #666;
 }
+.page .increase_title {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.page .increase_title .increase_title_text {
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  background-color: aqua;
+}
+.page .increase_title .date {
+  margin-left: 290rpx;
+  color: #666;
+  background-color: aquamarine;
+}
+.page .increase_info {
+  width: 90%;
+  border-radius: 5rpx;
+  height: 200rpx;
+  display: flex;
+  background-color: blue;
+  align-items: center;
+}
+.page .increase_info .inner_total {
+  width: 120rpx;
+  height: 180rpx;
+  margin-left: 10rpx;
+  background-color: #666;
+}
+.page .increase_info .city_total {
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 20rpx;
+  background-color: aqua;
+}
+.page .increase_info .outer_input {
+  width: 120rpx;
+  height: 180rpx;
+  margin-left: 20rpx;
+  background-color: #666;
+}
+.page .increase_info .total {
+  width: 180rpx;
+  height: 180rpx;
+  margin-left: 20rpx;
+  background-color: aqua;
+}
