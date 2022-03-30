@@ -1,0 +1,32 @@
+<!--pages/navigator/login/login.wxml-->
+
+<view class="content">
+    <view class="username">
+        <view class="title">用户名：</view>
+        <view class="userid">
+            <input type="text" bindinput="usernameInput" placeholder="用户名"placeholder-style="color: #999"/>
+        </view>
+    </view>
+    <view class="hr"></view>
+    <view class="username">
+        <view class="title">密码：</view>
+        <view class="userid">
+            <input type="text" bindinput="passwordInput" placeholder="请输入密码"placeholder-style="color: #999"/>
+        </view>
+    </view>
+    <!-- 登录按钮 -->
+    <button type="primary" bindtap="login" class="loginBtn" disabled="{{loginBtnState}}">登录</button>
+    <!-- 注册 -->
+    <view class="register">
+        <view>
+            <navigator open-type="navigate" url="../usetup/usetup">
+                用户注册
+            </navigator>
+        </view>
+        <view>
+             <navigator open-type="navigate" url="../msetup/msetup">
+                商家注册
+            </navigator>
+        </view>
+    </view>
+</view>

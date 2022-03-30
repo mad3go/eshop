@@ -44,7 +44,7 @@ Page({
             })
             .then(res => {
                 this.Cates = res.data.data.page.records;
-                console.log(res);
+                //console.log(res);
                 //构造左侧的大菜单数据
                 let leftMenuList = this.Cates.map(v => v.name);
                 this.setData({

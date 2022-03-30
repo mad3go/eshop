@@ -5,6 +5,9 @@ export const request=(params)=>{
         wx.request({
             ...params,
             url:baseUrl+params.url,
+            header:{
+                'content-type': 'application/json'
+            },
             success:(result)=>{
                 resolve(result);
             },

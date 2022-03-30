@@ -1,0 +1,30 @@
+.content {
+  margin-top: 80rpx;
+}
+.content .username {
+  display: flex;
+  flex-direction: row;
+  padding-left: 40rpx;
+  padding-top: 40rpx;
+  padding-bottom: 20rpx;
+  width: 100%;
+}
+.content .username .title {
+  width: 150rpx;
+  font-weight: hold;
+}
+.content .hr {
+  border: 2rpx solid #cccccc;
+  margin: 0 auto;
+  opacity: 0.3;
+}
+.content .register {
+  display: flex;
+  flex-direction: row;
+}
+.content .register view {
+  margin: 0 auto;
+  margin-top: 80rpx;
+  font-size: 30rpx;
+  color: #333;
+}
