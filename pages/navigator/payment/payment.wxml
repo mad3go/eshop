@@ -1,6 +1,39 @@
-<!--pages/navigator/payment/payment.wxml-->
-<view class="page">
-    <view>
-        
+<!-- 收货地址 -->
+<view class="address_wrap">
+    <view class="address_btn" wx:if="{{!address.userName}}">
+        <button bindtap="handleChooseAddress" type="primary" plain>获取收货地址</button>
+    </view>
+    <view class="user_info_row" wx:else>
+        <view class="address_icon iconfont icon-gps"></view>
+        <view class="user_info">
+            <view class="user_address">{{address.all}}</view>
+            <view class="user_name">{{address.userName}}</view>
+            <view class="user_phone">{{address.telNumber}}</view>
+        </view>
+        <navigator class="add_search iconfont icon-youjiantou"></navigator>
     </view>
 </view>
+<!-- 订单详情 -->
+<view class="content">
+    <view class="title">
+        <view>订单详情</view>
+    </view>
+    <view class="goods_list">
+        <!-- 商品图片 -->
+        <navigator class="cart_img_wrap">
+            <image mode="widthFix" src="{{item.img}}" />
+        </navigator>
+        <!-- 商品信息 -->
+        <view class="cart_info_wrap">
+            <view class="goods_name">{{item.goods_name}}</view>
+            <view class="goods_price">{{item.goods_price}}</view>
+            <view class="goods_num">{{item.goods_num}}</view>
+        </view>
+    </view>
+    <view class="bp_price"></view>
+    <view class="total_price"></view>
+</view>
+<!-- 支付方式 -->
+<view class="pay_way"></view>
+<!-- 底部工具栏 -->
+<view class="footer_tool"></view>

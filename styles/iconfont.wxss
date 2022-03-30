@@ -1,7 +1,7 @@
 @font-face {
     font-family: "iconfont";
     /* Project id 3258961 */
-    src: url('//at.alicdn.com/t/font_3258961_37zfi1nhdnv.woff2?t=1648307301616') format('woff2'), url('//at.alicdn.com/t/font_3258961_37zfi1nhdnv.woff?t=1648307301616') format('woff'), url('//at.alicdn.com/t/font_3258961_37zfi1nhdnv.ttf?t=1648307301616') format('truetype');
+    src: url('//at.alicdn.com/t/font_3258961_bnmgw2tjn75.woff2?t=1648626772259') format('woff2'), url('//at.alicdn.com/t/font_3258961_bnmgw2tjn75.woff?t=1648626772259') format('woff'), url('//at.alicdn.com/t/font_3258961_bnmgw2tjn75.ttf?t=1648626772259') format('truetype');
 }
 
 .iconfont {
@@ -10,6 +10,14 @@
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shuliangjianshao_o:before {
+    content: "\eb86";
+}
+
+.icon-youjiantou:before {
+    content: "\e60b";
 }
 
 .icon-pingfen:before {
@@ -50,18 +58,4 @@
 
 .icon-waimai:before {
     content: "\e618";
-}
-
-
-/* 新增数量减少icon */
-
-.icon-shuliangjianshao_o:before {
-    content: "\eb86";
-}
-
-
-/* 右箭头 */
-
-.icon-youjiantou:before {
-    content: "\e60b";
 }

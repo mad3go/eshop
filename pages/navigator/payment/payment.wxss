@@ -1,1 +1,48 @@
-/* pages/navigator/payment/payment.wxss */
+.address_wrap .address_btn {
+  width: 100vw;
+  height: 10vh;
+  background-color: #fff;
+  margin-bottom: 10rpx;
+}
+.address_wrap .address_btn button {
+  width: 60%;
+}
+.address_wrap .user_info_row {
+  display: flex;
+  background-color: #fff;
+  width: 100vw;
+  height: 10vh;
+  margin-bottom: 10rpx;
+}
+.address_wrap .user_info_row .address_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+.address_wrap .user_info_row .user_info {
+  flex: 5;
+  position: relative;
+}
+.address_wrap .user_info_row .user_info .user_address {
+  position: absolute;
+  left: 0;
+  top: 10rpx;
+}
+.address_wrap .user_info_row .user_info .user_name {
+  position: absolute;
+  left: 0;
+  bottom: 20rpx;
+}
+.address_wrap .user_info_row .user_info .user_phone {
+  position: absolute;
+  left: 100rpx;
+  bottom: 26rpx;
+}
+.address_wrap .user_info_row .add_search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+/* 订单详情 */
