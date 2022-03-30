@@ -1,5 +1,5 @@
 import { request } from "../../../request/index";
-
+//普通用户登录
 // pages/navigator/login/login.js
 Page({
 
@@ -66,10 +66,11 @@ Page({
           duration:2000
         })
         var token = res.data.data.token;
+        console.log(token);
         var userId = res.data.data.userId;
         wx.setStorageSync("token", token); //缓存token
         wx.setStorageSync("userId",userId);//缓存userId
-        wx.navigateBack({
+        wx.switchTab({
           url: '/pages/home/home'
         });
         console.log(res);

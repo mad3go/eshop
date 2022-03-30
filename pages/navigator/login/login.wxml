@@ -1,5 +1,5 @@
 <!--pages/navigator/login/login.wxml-->
-
+<!-- 普通用户登录 -->
 <view class="content">
     <view class="username">
         <view class="title">用户名：</view>

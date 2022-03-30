@@ -1,2 +1,19 @@
 <!--pages/navigator/msetup/msetup.wxml-->
-<text>pages/navigator/msetup/msetup.wxml</text>
+<!-- 商家注册 -->
+<view class="content">
+    <view class="username">
+        <view class="title">商店名：</view>
+        <view class="userid">
+            <input type="text" bindinput="usernameInput" placeholder="输入商店名"placeholder-style="color: #999"/>
+        </view>
+    </view>
+    <view class="hr"></view>
+    <view class="username">
+        <view class="title">密码：</view>
+        <view class="userid">
+            <input type="text" bindinput="passwordInput" placeholder="请输入密码"placeholder-style="color: #999"/>
+        </view>
+    </view>
+    <!-- 注册按钮 -->
+    <button type="primary" bindtap="setup" class="setupBtn" disabled="{{setupBtnState}}">注册</button>
+</view>

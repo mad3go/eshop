@@ -53,6 +53,17 @@ Page({
    */
   onLoad: function (options) {
     //this.getList();
+    const token = wx.getStorageSync("token");
+    //console.log(token);
+    request({
+      url:'/order/queryByUserToken',
+      header:{
+        "token":token
+      }
+    })
+    .then(res=>{
+      console.log(res);
+    })
   },
 
   /**

@@ -17,5 +17,4 @@
 page {
     background-color: #f5f5f5;
     /* 定义主题颜色 */
-    --themeColor: #eb4450;
 }
