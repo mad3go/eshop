@@ -1,4 +1,106 @@
-.all_page {
+.tab {
+  width: 100vw;
+}
+.tab .order_item {
+  width: 100%;
+  height: 400rpx;
   display: flex;
   flex-direction: column;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.tab .order_item .order_title {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+.tab .order_item .order_title .shop_name {
+  flex: 3;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  padding-left: 10rpx;
+}
+.tab .order_item .order_title .shop_name .name {
+  font-size: 36rpx;
+}
+.tab .order_item .order_title .wait_pay {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32rpx;
+  color: #999;
+}
+.tab .order_item .order_content {
+  flex: 2;
+  display: flex;
+  border-bottom: 1rpx solid #ccc;
+}
+.tab .order_item .order_content .goods_list {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tab .order_item .order_content .goods_list .goods_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-right: 30rpx;
+}
+.tab .order_item .order_content .goods_list .goods_item .goods_bg {
+  width: 140rpx;
+  height: 120rpx;
+}
+.tab .order_item .order_content .order_detail {
+  flex: 1;
+  display: flex;
+  font-size: 32rpx;
+  position: relative;
+}
+.tab .order_item .order_content .order_detail .total_num {
+  color: #999;
+  position: absolute;
+  right: 100rpx;
+  bottom: 20rpx;
+}
+.tab .order_item .order_content .order_detail .total_price {
+  color: var(--themeColor);
+  position: absolute;
+  right: 20rpx;
+  bottom: 25rpx;
+}
+.tab .order_item .order_confirm {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.tab .order_item .order_confirm .cancel {
+  width: 240rpx;
+  height: 60rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  font-size: 30rpx;
+  right: 210rpx;
+  top: 20rpx;
+}
+.tab .order_item .order_confirm .pay {
+  width: 180rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  color: #fff;
+  background-color: #ed714a;
+  border-radius: 10rpx;
+  font-size: 30rpx;
+  right: 30rpx;
+  top: 20rpx;
 }
