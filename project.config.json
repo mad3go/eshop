@@ -9,7 +9,7 @@
     ]
   },
   "setting": {
-    "urlCheck": true,
+    "urlCheck": false,
     "es6": true,
     "enhance": true,
     "postcss": true,
@@ -48,7 +48,7 @@
   },
   "compileType": "miniprogram",
   "libVersion": "2.19.4",
-  "appid": "wx25f6453aac723722",
+  "appid": "wx915d3d9ff2e3aa94",
   "projectname": "eshop",
   "debugOptions": {
     "hidedInDevtools": []

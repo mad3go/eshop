@@ -6,30 +6,63 @@
         <view class="discover_text">
             <text>发现</text>
         </view>
-        <view class="discover_tabs">
-            <scroll-view class="scoll_view_tag" scroll-x="true" enable-flex="true">
-                <view class="tag">米面粮油</view>
-                <view class="tag">果蔬生鲜</view>
-                <view class="tag">生活用品</view>
-                <view class="tag">医护用品</view>
-            </scroll-view>
-        </view>
+       
+        <scroll-view class="scroll_tag" scroll-x="true">
+            <view class="flex_tag">
+                <view class="tag_parent" wx:for="{{homeTabs}}" wx:key="index">
+                <view class="tag_item" hover-class="tag_hover">{{item.name}}</view>
+                </view>
+            </view>
+        </scroll-view>
+        
         <view class="discover_text">
             <text>热门店铺</text>
         </view>
 
-        <view class="discover_tabs">
-            <scroll-view class="scoll_view_wangpu" scroll-x="true" enable-flex="true">
-                <view class="wangpu">
-                    <image src="../../icon/sucai.jpeg" alt="sucai" mode="aspectFill"></image>
-                    <viwe class="wangpu_info">
-                        
-                    </viwe>
+        <scroll-view class="scroll_wangpu" scroll-x="true">
+            <view class="flex_wangpu">
+                <view class="wangpu_parent" wx:for="{{wangpu}}" wx:key="index">
+                    <view class="wangpu_item">
+                        <image src="{{item.img}}" mode="aspectFill" lazy-load="false" binderror="" bindload="">
+                        </image>
+                         <view class="rate">
+                                <text class="iconfont icon-pingfen" style="font-size:30rpx; color:#e99d42; margin-left:5rpx"></text>
+                                <text class="rate_goals">{{item.rateGoals}}</text>
+                        </view>
+                        <view class="wangpu_info">
+                            <view class="wangpu_info_name">{{item.name}}</view>
+                            <view class="wangpu_locationNtime">
+                                <view class="wangpu_location">
+                                    <text class="iconfont icon-gps" style="font-size:25rpx; line-height:50rpx; color:#60b173"></text>
+                                    <text class="wangpu_loc_info">{{item.distances}}km</text>
+                                </view>
+                                <view class="wangpu_time">
+                                    <text class="iconfont icon-shijian" style="font-size:40rpx; line-height:50rpx; color:#60b173"></text>
+                                    <text class="wangpu_time_info">{{item.time}}min</text>
+                                </view>
+                            </view>
+                            <view class="associate_tag">
+                                <view class="associate_tag_item" wx:for="{{item.tag}}" wx:key="index" wx:for-item="tag">{{tag}}</view>
+                            </view>
+                        </view>
+                    </view>
                 </view>
-                <view class="wangpu">
-                    <image src="../../icon/roupian.jpeg" alt="roupian" mode="aspectFill"></image>
-                </view>
-            </scroll-view>
+            </view>
+        </scroll-view>
+
+        <view class="discover_text">
+            <text>战役看点</text>
         </view>
         
+        <view class="antiepd_info" wx:for="{{antiepd_info_list}}" wx:for-index="antiepd" wx:for-item="item" wx:key="unique">
+            <image src="{{item.img}}"></image>
+            <view class="antiepd_info_detail">
+                <view class="title">{{item.title}}</view>
+                <view class="sourceNtime">
+                    <view class="source">{{item.source}}</view>
+                    <view class="time">{{item.time}}</view>
+                </view>
+            </view>
+                
+        </view>
 </view>

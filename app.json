@@ -1,20 +1,36 @@
 {
   "pages": [
     "pages/home/home",
+    "pages/order/order",
     "pages/index/index",
     "pages/logs/logs",
     "pages/antiepd/antiepd",
-    "pages/order/order",
+    "pages/ucenter/home/home",
+    "pages/ucenter/address/address",
+    "pages/ucenter/address-mgr/address-mgr",
+    "pages/ucenter/password/password",
+    "pages/ucenter/about/about",
+    "pages/ucenter/order/order",
     "pages/profile/profile",
     "pages/takeout/takeout",
-    "components/searchInput",
-    "components/searchInput/searchInput"
+    "components/searchInput/searchInput",
+    "components/regionSelector/regionSelector",
+    "pages/test",
+    "pages/test/test",
+    "pages/navigator/payment/payment",
+    "pages/navigator/f2pay/f2pay",
+    "pages/navigator/s2pay/s2pay",
+    "pages/navigator/address/editAddress/editAddress",
+    "pages/navigator/login/login",
+    "pages/navigator/msetup/msetup",
+    "pages/navigator/usetup/usetup"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "Weixin",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
   },
   "tabBar": {
     "list": [
@@ -37,7 +53,7 @@
         "iconPath": "icon/_order.png"
       },
       {
-        "pagePath": "pages/profile/profile",
+        "pagePath": "pages/ucenter/home/home",
         "text": "我的",
         "selectedIconPath": "icon/profile.png",
         "iconPath": "icon/_profile.png"
@@ -45,5 +61,8 @@
     ]
   },
   "style": "v2",
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "cu-custom": "/colorui/components/cu-custom"
+  }
 }

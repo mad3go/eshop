@@ -1,0 +1,10 @@
+<!--pages/navigator/s2pay/s2pay.wxml-->
+<view class="page">
+       <view class="sign">
+            <text class="iconfont icon-shibai" style="font-size:140rpx;"></text>
+       </view>
+       <text class="t1">支付失败</text>
+       <text class="t2">获得积分:{{goals}}</text>
+       <view class="v1">继续点餐</view>
+       <view class="v2">查看订单</view>
+</view>

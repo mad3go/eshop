@@ -1,0 +1,54 @@
+/* pages/profile/profile.wxss */
+.user-center-bg {
+  background-image: url("http://a1.qpic.cn/psc?/V10gbRyS1lhCKR/ruAMsa53pVQWN7FLK88i5kKgz6mVfmay6DYFmumeoAJmC6FqYIjzMHpPFnjSnHTWIFii016GgnWJWie.Ircq9HURWUgjqzFAEJoGTc4s6LI!/c&ek=1&kp=1&pt=0&bo=OAS8AgAAAAABF7I!&t=5&tl=3&vuin=2630808880&tm=1619676000&sce=60-2-2&rf=newphoto&t=5");
+  background-size: cover;
+  height: 370rpx;
+  padding-top: 10rpx;
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 300;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+
+.user-center-bg text {
+  opacity: 0.8;
+}
+
+.user-center-bg .diy-container {
+  padding:70rpx;
+}
+
+.user-center-bg .user-avatar {
+  float: left;
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+
+.user-nickname {
+  float: left;
+  margin-top: 50rpx;
+  margin-left: 20rpx !important;
+  padding-top:10rpx;
+  padding-left: 50rpx;
+  font-size: 42rpx;
+  font-weight: bold;
+}
+
+.user-loginbtn {
+  margin-top: 50rpx;
+  margin-left: 20rpx !important;
+  border: none !important;
+  background-color: none  !important;
+}
+
+.user-center-bg .gif-wave{
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  mix-blend-mode: screen;  
+  height: 100rpx;   
+}

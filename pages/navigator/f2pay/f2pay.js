@@ -1,4 +1,4 @@
-// components/searchInput.js
+// pages/navigator/f2pay/f2pay.js
 Page({
 
   /**
