@@ -30,8 +30,18 @@
             <view class="date">截止到{{covid_increase.outer}}</view>
         </view>
         <view class="increase_info">
-                <view class="inner_total"></view>
-                <view class="city_total"></view>
+                <view class="inner_total">
+                    <view class="inner_total_text1">较昨日</view>
+                    <view class="inner_total_nums">+{{covid_increase.inner}}</view>
+                    <view class="inner_total_text2">本土确诊</view>
+                </view>
+                <view class="city_total">
+                    <view class="city_total_top" wx:for="{{covid_increase.city}}" wx:key="index">
+                        <!-- {{item.cname}}{{item.nums}} -->
+                        <view class="num1"></view>
+                        <view class="num2"></view>
+                    </view>
+                </view>
                 <view class="outer_input"></view>
                 <view class="total"></view>
             </view>

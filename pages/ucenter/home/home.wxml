@@ -6,6 +6,17 @@
     <image class="user-avatar" mode="widthFix" src="{{wechatUserInfo.avatarUrl}}"></image>
     <view wx:if="{{isLogined === true}}"class="user-nickname">{{wechatUserInfo.nickName}}</view>
     <button wx:if="{{isLogined === false}}" class="cu-btn round line-white user-loginbtn" bindtap="login">点击登录</button>
+
+    <!-- <block wx:if="{{isLogined === true}}">
+      <view class="user-nikename">
+        {{wechatUserInfo.nickName}}
+      </view>
+    </block>
+    <block wx:elif="{{isLogined === true}}">
+      <button wx:if="{{isLogined === false}}" class="cu-btn round line-white user-loginbtn" bindtap="login">点击登录</button>
+    </block> -->
+
+
     <image src="/static/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
     </view>
   </view>

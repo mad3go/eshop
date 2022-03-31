@@ -54,7 +54,7 @@ Page({
   onLoad: function (options) {
     //this.getList();
     const token = wx.getStorageSync("token");
-    //console.log(token);
+    console.log("这个是缓存后的toekn："+token);
     request({
       url:'/order/queryByUserToken',
       header:{

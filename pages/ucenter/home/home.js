@@ -1,3 +1,4 @@
+import { request } from "../../../request/index";
 
 // pages/profile/profile.js
 Page({
@@ -18,8 +19,29 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
+  //判断缓存里拿到token的时候，获取个人信息刷新页面
   onLoad: function (options) {
-    console.log('onload出发')
+    var isLogined = this.isLogined;
+    var token = wx.getStorageSync('token');
+    var userId = wx.getStorageSync('userId');
+    if(token){
+      request({
+        url:'/user/info/' + userId,
+        header:{
+          'token': token
+        }
+      })
+      .then(res=>{
+        isLogined = true;
+        console.log(res);
+        this.setData({
+          isLogined:isLogined
+        })
+      })
+    }
+    else{
+      console("没有用户信息");
+    }
     // wx.login({
     //   success: (res) => {
     //     if (res.code) {

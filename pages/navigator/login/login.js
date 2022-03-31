@@ -48,7 +48,7 @@ Page({
   }
   },
   login(){
-    var userInfs = wx.getStorageSync('userobj') || [];
+    //var userInfs = wx.getStorageSync('userobj') || [];
     var username = this.data.username;
     var password = this.data.password;
     // 至少为空数组而不会变成undefined
@@ -66,14 +66,11 @@ Page({
           duration:2000
         })
         var token = res.data.data.token;
-        console.log(token);
+        console.log("这个是缓存前的toekn："+token);
         var userId = res.data.data.userId;
         wx.setStorageSync("token", token); //缓存token
         wx.setStorageSync("userId",userId);//缓存userId
-        wx.switchTab({
-          url: '/pages/home/home'
-        });
-        console.log(res);
+        wx.setStorageSync("username",username);//缓存username
         this.setData({
           username:username
         })
